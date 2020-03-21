@@ -1,0 +1,15 @@
+table{
+    border: 5px black;
+}
+tr,th,td{
+    border: 5px black;
+    padding: 5px;
+    text-align: center;
+}
+button{
+    float:right;
+    color: blue;
+}
+p{
+    text-align: center;
+}

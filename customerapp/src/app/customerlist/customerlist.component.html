@@ -1,0 +1,27 @@
+<div class="card-header">
+    Customer Details
+    <button routerLink="/addcustomer" routerLinkActive="active">AddCustomer</button>
+</div>
+<div class=card-body>
+    <table>
+        <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            
+        </tr>
+        <tr *ngFor="let customer of customerlist ">
+            <td><p routerLink="/editcustomer" routerLinkActive="active">{{customer.firstName}}</p></td>
+            <td>{{customer.lastName}}</td>
+            <td>{{customer.address}}</td>
+            <td>{{customer.city}}</td>
+            <td>{{customer.state}}</td>
+
+        </tr>
+    </table>
+</div>
+<div class="card-footer">
+    created by @charan
+</div>
